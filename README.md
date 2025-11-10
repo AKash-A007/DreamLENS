@@ -11,14 +11,24 @@ A deep learning pipeline that maps EEG signals to CLIP semantic embeddings, enab
 
 ## Project Structure
 dreamlens/
-├── data/ # Dataset classes for EEG-CLIP pairs
-├── models/ # EEG encoder and image decoder
-├── utils/ # Preprocessing, losses, and metrics
+│
+├── data/ # EEG dataset classes and loaders
+│ └── eeg_dataset.py
+│
+├── models/ # Model architectures
+│ ├── eeg_encoder.py # EEG feature encoder (CNN-based)
+│ └── decoder.py # Image generation decoder
+│
+├── utils/ # Helper functions and metrics
+│ ├── preprocessing.py
+│ ├── losses.py
+│ └── metrics.py
+│
 ├── config.py # Configuration parameters
-├── train.py # Training script
-├── infer.py # Inference and image generation
+├── train.py # Model training script
+├── infer.py # EEG-to-Image inference
 ├── evaluate.py # Model evaluation
-└── requirements.txt # Dependencies
+└── requirements.txt # Project dependencies
 
 
 ## Quick Start
