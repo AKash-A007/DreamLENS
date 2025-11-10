@@ -10,7 +10,7 @@ A deep learning pipeline that maps EEG signals to CLIP semantic embeddings, enab
 - **Multi-modal Evaluation**: CLIP-based similarity metrics and accuracy
 
 ## Project Structure
-![DreamLENS Architecture](assets/architecture.png)
+![DreamLENS Architecture](assets/architecture.jpg)
 
 
 
