@@ -102,7 +102,7 @@ class EEGInferenceDataset(Dataset):
         self.data_path = data_path
         
         if data_path.endswith('.pth'):
-            data = torch.load(data_path, map_location='cpu')
+            data = torch.load(data_path, map_location='cpu',weights_only= False)
         else:
             raise ValueError("Unsupported data format. Use .pth files")
         

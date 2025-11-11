@@ -118,7 +118,7 @@ def main():
     os.makedirs(args.output_dir, exist_ok=True)
     
     # Load model
-    checkpoint = torch.load(args.checkpoint_path, map_location='cpu')
+    checkpoint = torch.load(args.checkpoint_path, map_location='cpu',weights_only = False)
     model = EEGToClipModel(
         eeg_channels=Config.EEG_CHANNELS,
         eeg_timepoints=Config.EEG_TIMEPOINTS,
